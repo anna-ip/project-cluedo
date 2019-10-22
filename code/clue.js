@@ -9,6 +9,52 @@ const mrGreen = {
   image: "assets/green.png",
   occupation: "Entrepreneur"
 }
+const professorPlum = {
+  firstName: "Victor ",
+  lastName: "Plum",
+  color: "Plum",
+  description: "He.....",
+  age: 40,
+  image: "assets/plum.png",
+  occupation: "Professor"
+}
+const missScarlet = {
+  firstName: "Cassandra",
+  lastName: "Scarlet",
+  color: "Red",
+  description: "She....",
+  age: 30,
+  image: "assets/scarlet.png",
+  occupation: ""
+}
+
+const mrsPeacock = {
+  firstName: "Eleanor",
+  lastName: "Peacock",
+  color: "Blue",
+  description: "She",
+  age: 70,
+  image: "assets/peacock.png",
+  occupation: ""
+}
+const colonelMustard = {
+  firstName: "Jack",
+  lastName: "Mustard",
+  color: "Yellow",
+  description: "He...",
+  age: 63,
+  image: "assets/mustard.png",
+  occupation: "Military"
+}
+const mrsWhite = {
+  firstName: "Mrs",
+  lastName: "White",
+  color: "Pink",
+  description: "She....",
+  age: 54,
+  image: "assets/white.png",
+  occupation: "servant"
+}
 
 // CREATE OBJECTS FOR ALL THE WEAPONS, ADD MORE CHARACTERISTICS THE THE WEAPONS IF YOU LIKE.
 
@@ -16,8 +62,59 @@ const rope = {
   name: "rope",
   weight: 10
 }
+const dnife = {
+  name: "knife",
+  weight: ""
+}
+const dandleStick = {
+  name: "candleStick",
+  weight: ""
+}
+const dumbbell = {
+  name: "dunmbbell",
+  weight: ""
+}
+const poison = {
+  name: "poison",
+  weight: ""
+}
+const axe = {
+  name: "axe",
+  weight: ""
+}
+const Bat = {
+  name: "bat",
+  weight: ""
+}
+const trophy = {
+  name: "trophy",
+  weight: ""
+}
+const pistol = {
+  name: "pistol",
+  weight: ""
+}
+
+
 
 // THE ROOMS ONLY HAS A NAME SO NO NEED FOR OBJECTS THERE.
+const rooms = [
+  dinnigRoom,
+  conservatory,
+  kitchen,
+  study,
+  library,
+  billiardRoom,
+  lounge,
+  ballRoom,
+  hall,
+  spa,
+  livingRoom,
+  observatory,
+  theater,
+  house,
+  patio
+]
 
 // NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS.
 
