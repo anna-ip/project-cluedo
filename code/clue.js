@@ -9,7 +9,7 @@ const mrGreen = {
   image: "assets/green.png",
   occupation: "Entrepreneur"
 }
-const professorPlum = {
+const profPlum = {
   firstName: "Victor ",
   lastName: "Plum",
   color: "Plum",
@@ -62,11 +62,11 @@ const rope = {
   name: "rope",
   weight: 10
 }
-const dnife = {
+const knife = {
   name: "knife",
   weight: ""
 }
-const dandleStick = {
+const candleStick = {
   name: "candleStick",
   weight: ""
 }
@@ -82,7 +82,7 @@ const axe = {
   name: "axe",
   weight: ""
 }
-const Bat = {
+const bat = {
   name: "bat",
   weight: ""
 }
@@ -98,43 +98,86 @@ const pistol = {
 
 
 // THE ROOMS ONLY HAS A NAME SO NO NEED FOR OBJECTS THERE.
+
+const dinningRoom = {}
+const conservatory = {}
+const kitchen = {}
+const study = {}
+const library = {}
+const billiardRoom = {}
+const lounge = {}
+const ballroom = {}
+const hall = {}
+const spa = {}
+const livingRoom = {}
+const observatory = {}
+const theater = {}
+const guestHouse = {}
+const patio = {}
+
+
+
+
+
+// NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS.
+
+const suspects = [
+  mrGreen,
+  profPlum,
+  missScarlet,
+  mrsPeacock,
+  colonelMustard,
+  mrsWhite,
+];
+//suspects.forEach(suspects => {
+console.log(suspects);
+//});
+
+const weapons = [
+  rope,
+  knife,
+  candleStick,
+  dumbbell,
+  poison,
+  axe,
+  bat,
+  trophy,
+  pistol
+];
+//weapons.forEach(weapons => {
+console.log(weapons);
+//});
+
 const rooms = [
-  dinnigRoom,
+  dinningRoom,
   conservatory,
   kitchen,
   study,
   library,
   billiardRoom,
   lounge,
-  ballRoom,
+  ballroom,
   hall,
   spa,
   livingRoom,
   observatory,
   theater,
-  house,
+  guestHouse,
   patio
-]
+];
 
-// NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS.
+//rooms.forEach(rooms => {
+console.log(rooms);
+//});
 
-const suspects = [
-  mrGreen,
-  mrsWhite,
-  profPlum,
-  missScarlet,
-  mrsPeacock,
-  mrMustard
-]
 
-const weapons = []
 
-const rooms = []
 
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FOR THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
 const randomSelector = array => {
   return array[Math.floor(Math.random() * array.length)]
 }
+
 
 // CREATE AN OBJECT THAT KEEPS THE MYSTERY.
 // With a killer, a weapon and a room.
