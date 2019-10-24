@@ -162,13 +162,13 @@ console.log(weapons);
 //});
 
 const rooms = [
-  "dinningRoom",
-  "conservatory",
-  "kitchen",
-  "study",
-  "library",
-  "billiardRoom",
-  "lounge",
+  "Dinning Room",
+  "Conservatory",
+  "Kitchen",
+  "Study",
+  "Library",
+  "Billiard Room",
+  "Lounge",
   "ballroom",
   "hall",
   "spa",
@@ -255,7 +255,7 @@ const pickWeapon = () => {
   const theWeaponName = document.getElementById("weaponName")
   const theWeaponWeight = document.getElementById("weaponWeight")
 
-  theWeapon.style.background = mystery.weapon.color
+  //theWeapon.style.background = mystery.weapon.color  //to change color of the card
   theWeaponName.innerHTML = mystery.weapon.name
   theWeaponWeight.innerHTML = mystery.weapon.weight
 };
@@ -269,12 +269,19 @@ const pickRoom = () => {
   const theRoom = document.getElementById("room")
   const theRoomName = document.getElementById("roomName")
 
-  theRoom.style.background = mystery.room.color
+  //theRoom.style.background = mystery.room.color //to change color of the card
   theRoomName.innerHTML = mystery.room
 };
 //pickRoom();
 
 
 
-// CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:
-// 'The murder was committed by Jacob Green, in the living room with a rope.'
+// *****CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:****
+const revealMystery = () => {
+  document.getElementById("mystery").innerHTML = `The murder was committed by ${mystery.killer.firstName} ${mystery.killer.lastName}, in the ${mystery.room} with a ${mystery.weapon.name}.`
+  //console.log(`The murder was committed by ${killer}, in the ${room} with a ${weapon}.`)
+
+}
+// ***'The murder was committed by Jacob Green, in the living room with a rope.'***
+//document.getElementById('mystery').addEventListener('click', revealMystery)  //not nessesary if you have a onclick in index.HTML
+//document.getElementById('mystery').onclick(revealMystery) does the same thing as .addEventListener
