@@ -278,7 +278,8 @@ const pickRoom = () => {
 
 // *****CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:****
 const revealMystery = () => {
-  document.getElementById("mystery").innerHTML = `The murder was committed by ${mystery.killer.firstName} ${mystery.killer.lastName}, in the ${mystery.room} with a ${mystery.weapon.name}.`
+  document.getElementById("mystery").innerHTML = `The murder was committed by ${mystery.killer.firstName} ${mystery.killer.lastName}, 
+  in the ${mystery.room} with a ${mystery.weapon.name}.`
   //console.log(`The murder was committed by ${killer}, in the ${room} with a ${weapon}.`)
 
 }
