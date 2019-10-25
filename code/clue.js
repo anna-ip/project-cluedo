@@ -169,14 +169,14 @@ const rooms = [
   "Library",
   "Billiard Room",
   "Lounge",
-  "ballroom",
-  "hall",
-  "spa",
-  "livingRoom",
-  "observatory",
-  "theater",
-  "guestHouse",
-  "patio"
+  "Ballroom",
+  "Hall",
+  "Spa",
+  "Living Room",
+  "Observatory",
+  "Theater",
+  "Guest House",
+  "Patio"
 ]
 
 //rooms.forEach(rooms => {
