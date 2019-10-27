@@ -8,6 +8,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   font-family: "Courier New", Courier, monospace;
+  width:100%
 }
 
 p {
@@ -20,7 +21,8 @@ p {
 .cards {
   margin: 50px auto;
   width: 90%;
-  height: 600px;
+  height: 80%;
+  padding: 10%;
   background: #ccc;
   display: flex;
   justify-content: space-around;
@@ -48,32 +50,41 @@ img {
   text-align: center;
   padding-top: 50px;
   border-radius: 16px;
+  margin: 0 5px;
 }
 
 .room-deck {
   width: 250px;
   height: 400px;
   background: midnightblue;
-
   text-align: center;
   padding-top: 50px;
   border-radius: 16px;
 }
+
 .mystery {
   display: flex;
   flex-wrap: wrap;
+  width:100%;
 }
+
 h1 {
-  margin: 60px;
+  margin: 10px 60px 20px;
   font-weight: 500;
+  width:100%
 }
+
+.reveal-mystery {
+  text-align: center;
+ }
+
 button {
   padding: 8px 16px;
   background: white;
   border: none;
   font-size: 20px;
   border-radius: 8px;
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   margin-bottom: 15px;
 }
@@ -82,15 +93,23 @@ button {
  .cards {
    flex-direction: column;
   }
+
+  .weapon-deck {
+    margin: 5px 0;
+  }
+
   p {
     margin-bottom: 15px;
   }
+
   .mystery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
+
   h1 {
     text-align: center;
+    width:100%;
   }
 }

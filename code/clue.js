@@ -111,40 +111,20 @@ const pistol = {
 
 // ****THE ROOMS ONLY HAS A NAME SO NO NEED FOR OBJECTS THERE.***
 
-/*//Vet ej hur det ska se ut här, ej object men vadå?
-const dinningRoom;
-const conservatory;
-const kitchen;
-const study;
-const library;
-const billiardRoom;
-const lounge;
-const ballroom;
-const hall;
-const spa;
-const livingRoom;
-const observatory;
-const theater;
-const guestHouse;
-const patio;
-*/
-
-
-
 
 // NOW GROUP ALL SUSPECTS, WEAPONS AND ROOMS IN ARRAYS.
 
 const suspects = [
   mrGreen,
-  //profPlum,
+  profPlum,
   missScarlet,
   mrsPeacock,
   colonelMustard,
   mrsWhite
 ]
-//suspects.forEach(suspects => {
+
 console.log(suspects);
-//});
+
 
 const weapons = [
   rope,
@@ -157,9 +137,9 @@ const weapons = [
   trophy,
   pistol
 ]
-//weapons.forEach(weapons => {
+
 console.log(weapons);
-//});
+
 
 const rooms = [
   "Dinning Room",
@@ -179,9 +159,9 @@ const rooms = [
   "Patio"
 ]
 
-//rooms.forEach(rooms => {
+
 console.log(rooms, suspects, weapons);
-//});
+
 
 
 // THIS FUNCTION WILL RANDOMLY SELECT ONE ITEM FOR THE ARRAY THAT YOU PASS IN TO THE FUNCTION.
@@ -191,23 +171,6 @@ const randomSelector = array => {
 }
 //randomSelector();
 //console.log(randomSelector)
-/*
-const randomSelectorSuspects = (suspectsGroup) => {
-  return suspectsGroup[Math.floor(Math.random() * suspectsGroup.length)];
-};
-
-const randomSelectorWeapons = (weaponsGroup) => {
-  return weaponsGroup[Math.floor(Math.random() * weaponsGroup.length)];
-};
-
-const randomSelectorRooms = (roomsGroup) => {
-  return roomsGroup[Math.floor(Math.random() * roomsGroup.length)];
-}; */
-
-//console.log(randomSelector(suspects).name);
-//console.log(randomSelector(weapons).name);
-//console.log(randomSelecto(rooms));
-
 
 
 // *****CREATE AN OBJECT THAT KEEPS THE MYSTERY.*****
@@ -217,7 +180,6 @@ let mystery = {
   killer: "",
   weapon: "",
   room: "",
-
 };
 
 //*****  FINISH THIS FUNCTION TO SHOW ALL INFORMATION ABOUT THE KILLER. ****
@@ -278,11 +240,11 @@ const pickRoom = () => {
 
 // *****CREATE A FUNCTION revealMystery that will be invoked when you click that button. It should show something like:****
 const revealMystery = () => {
-  document.getElementById("mystery").innerHTML = `The murder was committed by ${mystery.killer.firstName} ${mystery.killer.lastName}, 
-  in the ${mystery.room} with a ${mystery.weapon.name}.`
+  document.getElementById("mystery").innerHTML = `The murder was committed by ${mystery.killer.firstName} ${mystery.killer.lastName}, with a ${mystery.weapon.name}
+  in the ${mystery.room}.`
   //console.log(`The murder was committed by ${killer}, in the ${room} with a ${weapon}.`)
 
 }
 // ***'The murder was committed by Jacob Green, in the living room with a rope.'***
 //document.getElementById('mystery').addEventListener('click', revealMystery)  //not nessesary if you have a onclick in index.HTML
-//document.getElementById('mystery').onclick(revealMystery) does the same thing as .addEventListener
+//document.getElementById('mystery').onclick(revealMystery) //does the same thing as .addEventListener
