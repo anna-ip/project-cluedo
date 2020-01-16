@@ -1,18 +1,20 @@
-Week 5 of Technigos boot camp with Java Script
 
-`PROJECT 5`
-To build:
 # A piece of Cluedo
 
-This week's been all about Javascript, learning about arrays and objects. We're going to hook that up with some html and css in this project!
+A piece of Cluedo built with Javascript, learning about arrays and objects, where you can randomly pick suspects, weapons and rooms and in the end you can reveal the mystery.
 
-
-Requirements for project-5
-
-- Code follows Technigo’s code guidelines.
+Learning objectives:
+- How to use Arrays in JavaScript
+- How to use forEach-loops in JavaScript
+- How to use objects in JavaScript
+- Knowledge about closures and scope in JavaScript
 - Site should have three clickable cards and a clickable button.
-- You should be able to randomly pick suspects, weapons and rooms.
-- You should be able to reveal the mystery.
+- You should be able to randomly pick 
+
+Technology implemented:
+- JavaScript
+- HTML
+- CSS
 
 
 Deployed project on Netlify:
