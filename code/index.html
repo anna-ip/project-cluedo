@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <div>
+      <a
+        href="https://www.flaticon.local/authors/freepik"
+        title="Freepik"
+        alt="Icons made by Freepik"
+      ></a>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Clue</title>
-</head>
+      <a href="https://www.flaticon.local/" title="Flaticon"></a>
+    </div>
+    <title>Clue</title>
+  </head>
 
-<body>
-  <section class="cards">
-    <div class="killer-deck" id="killer" onclick="pickKiller()">
-      <p>KILLER</p>
-      <p id="killerName"></p>
-      <p id="killerAge"></p>
-      <p id="killerOccupation"></p>
-      <img id="killerImage" src="" height="180" />
-      <p id="killerDescription"></p>
+  <body>
+    <section class="cards">
+      <div class="killer-deck" id="killer" onclick="pickKiller()">
+        <p>KILLER</p>
+        <p id="killerName"></p>
+        <p id="killerAge"></p>
+        <p id="killerOccupation"></p>
+        <img id="killerImage" src="" height="180" />
+        <p id="killerDescription"></p>
+      </div>
+      <div class="weapon-deck" id="weapon" onclick="pickWeapon()">
+        <p>WEAPON</p>
+        <p id="weaponName"></p>
+        <p id="weaponWeight"></p>
+        <img id="weaponImage" src="" />
+      </div>
+      <div class="room-deck" id="room" onclick="pickRoom()">
+        <p>ROOM</p>
+        <p id="roomName"></p>
+      </div>
+    </section>
+    <div class="mystery">
+      <h1 id="mystery"></h1>
+      <button onclick="revealMystery()">REVEAL THE CRIME</button>
     </div>
-    <div class="weapon-deck" id="weapon" onclick="pickWeapon()">
-      <p>WEAPON</p>
-      <p id="weaponName"></p>
-      <p id="weaponWeight"></p>
-    </div>
-    <div class="room-deck" id="room" onclick="pickRoom()">
-      <p>ROOM</p>
-      <p id="roomName"></p>
-    </div>
-  </section>
-  <div class="mystery">
-    <h1 id="mystery"></h1>
-    <button onclick="revealMystery()">REVEAL THE CRIME</button>
-  </div>
-  <footer> &copy;2019 Anna Almestål</footer>
-  <script src="clue.js"></script>
-</body>
-
+    <footer>&copy;2019 Anna Almestål</footer>
+    <script src="clue.js"></script>
+  </body>
 </html>
